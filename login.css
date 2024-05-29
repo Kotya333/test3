@@ -1,0 +1,91 @@
+input, textarea {
+    outline: 0;
+    border: none;
+    border-bottom: 2px solid var(--blue); /* Бирюзовая граница снизу */
+    width: 20vw;
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent; /* Прозрачный фон */
+    color: var(--blue); /* Бирюзовый текст */
+    @media (max-width: 600px) {
+        width: 50vw;
+    }
+}
+
+textarea {
+    border: 2px solid var(--blue); /* Бирюзовая граница */
+    border-radius: 5px;
+    height: 15vh; /* Увеличил высоту для текстовой области */
+    resize: none; /* Запретил изменение размера */
+}
+
+.login-field {
+    margin-bottom: 25px;
+}
+
+.lock-icon {
+    fill: var(--blue); /* Бирюзовый цвет иконки */
+    width: 25px;
+    height: 25px;
+}
+
+.lock-icon:hover {
+    cursor: pointer;
+}
+
+.login-card {
+    display: flex;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 30vw; /* Увеличил ширину карточки */
+    height: 3vh; /* Автоматическая высота */
+    background-color: var(--dark-blue); /* Темно-синий фон */
+    border: 2px solid var(--blue); /* Бирюзовая граница */
+    border-radius: 20px;
+    color: var(--blue); /* Бирюзовый текст */
+    @media (max-width: 600px) {
+        width: 70vw;
+    }
+}
+
+.invalid {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #FF5757; /* Ярко-красный фон */
+    border-radius: 5px;
+    color: var(--light-white); /* Белый текст */
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.login-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--green); /* Зеленая кнопка */
+    color: var(--light-white);
+    border: none;
+    border-radius: 30px; /* Увеличил радиус скругления */
+    font-size: 16px;
+    padding: 17px 45px;
+    transition: all 0.6s ease;
+}
+
+.login-btn:hover {
+    cursor: pointer;
+    background-color: var(--blue); /* Бирюзовый фон при наведении */
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    color: var(--blue); /* Бирюзовый заголовок */
+}

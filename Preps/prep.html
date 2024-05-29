@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../login.css">
+    <link type="image/x-icon" href="../favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.18.3/dist/css/uikit.min.css" />
+    <link type="Image/x-icon" href="../favicon.ico" rel="icon">
+    <title>Гордость гимназии</title>
+</head>
+
+<body>
+    <div class="content">
+
+    <header class="main-header">
+        <div class="left">
+            <img class="main-logo "
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB6UlEQVR4nO2Zu0oDQRSGv8RLVBRUEEVstNJKKwmYF7CwtLW09RG0tPCKPoEvYOELBBUEIQgWYgqx8K4RI4IgXkYSTmDYOGY35jKJ88GBZThz5p/Z+Qd2Fhz/hwgwC5wCSXnOtNUMHcAccAkoT9wBC0AXFtMHLAJpTXgCmJZIaO1pyc30sYZBYB141YTuA1NAyJMbA3a0vDdgCximioyKiHcR9Skioz76jknfD0/fcSpIblW/PKs6UkStoV/eZlkIS/EDbcAXETFQgvq9cgg8afWPgBmgoQT1aZZiJ9oA9zJoN+U78a608c6kraWYgu3S+UIreC5tbZSfiCxgUhv/Vhaw00+BHkl+1AocS9FGKk9YtvShpudZtnS/qdO8x3RxYPKHI7QahERLXNP3KprzyB2F2z6P0GoRFY1KNOehajTy2LNAlAoYuxTgQRInsIeYdvz7ZtmC1VaGWAoykSZLJ7Ms2gLjNZTJYNXK842bCO6NZHFby4TzCM4jWZxHTDiP4DySxXnEhPMIziNZnEfq1iPNwIYFn7bKExuizTdrFohWhlgNMpHcdVBFf7z4uGEMfB3054/9MqH86GoFNoGUBdtHFYiU+OXHfyYrFghUpbisu7HQF4X8cl1LvjBh1KtqNPKom4k4HJSOb9YIPbxbHjdLAAAAAElFTkSuQmCC">
+        </div>
+        <div class="right">
+            <h1 class="main-header-h" id="favorites">Гордость Гимназии</h1>
+            <span class="main-header-span" id="create">Логин</span>
+            <span class="main-header-span" id="name">Назад</span>
+            <div class="main-header-icon"></div>
+        </div>
+    </header>
+
+    <div class="login-card" style="opacity: 1; height: 60vh;">
+        <h2 id="ftmp">Форма</h2>
+        <div class="login-field">
+            <input placeholder="Пароль" id="pass">
+        </div>
+        <svg onclick="lock()" class="lock-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+            height="100" viewBox="0 0 24 24">
+            <path
+                d="M 12 1 C 8.6761905 1 6 3.6761905 6 7 L 6 8 C 4.9 8 4 8.9 4 10 L 4 20 C 4 21.1 4.9 22 6 22 L 18 22 C 19.1 22 20 21.1 20 20 L 20 10 C 20 8.9 19.1 8 18 8 L 18 7 C 18 3.6761905 15.32381 1 12 1 z M 12 3 C 14.27619 3 16 4.7238095 16 7 L 16 8 L 8 8 L 8 7 C 8 4.7238095 9.7238095 3 12 3 z M 12 13 C 13.1 13 14 13.9 14 15 C 14 16.1 13.1 17 12 17 C 10.9 17 10 16.1 10 15 C 10 13.9 10.9 13 12 13 z">
+            </path>
+        </svg>
+        <span class="invalid" id="inv">Any field is empty!</span>
+        <button class="login-btn" onclick="log('asd')">Завершить</button>
+    </div>
+
+    <div id="preppoint">
+
+        <div class="article prep-elem">
+            <img class="prep-img" src="https://abrakadabra.fun/uploads/posts/2021-12/1640528661_1-abrakadabra-fun-p-serii-chelovek-na-avu-1.png">
+            <h2 class="prep-name">Потемин Константин, 7 класс</h2>
+            <p class="prep-info">Призёр, за 9 класс</p>
+            <p class="prep-info">Муниципальный этап, информатика</p>
+        </div>
+
+        <div class="article prep-elem">
+            <img class="prep-img" src="https://abrakadabra.fun/uploads/posts/2021-12/1640528661_1-abrakadabra-fun-p-serii-chelovek-na-avu-1.png">
+            <h2 class="prep-name">Потемин Аркадий, 7 класс</h2>
+            <p class="prep-info">Победитель</p>
+            <p class="prep-info">Подмосковная олимпиада, информатика</p>
+        </div>
+
+        <div class="article prep-elem">
+            <img class="prep-img" src="https://abrakadabra.fun/uploads/posts/2021-12/1640528661_1-abrakadabra-fun-p-serii-chelovek-na-avu-1.png">
+            <h2 class="prep-name">Потемин Аркадий, 7 класс</h2>
+            <p class="prep-info">Призёр, за 9 класс</p>
+            <p class="prep-info">Муниципальный этап, информатика</p>
+        </div>
+
+        <div class="article prep-elem">
+            <img class="prep-img"
+                src="https://abrakadabra.fun/uploads/posts/2021-12/1640528661_1-abrakadabra-fun-p-serii-chelovek-na-avu-1.png">
+            <h2 class="prep-name">Сизова Татьяна, 10 класс</h2>
+            <p class="prep-info">Победитель</p>
+            <p class="prep-info">Региональный этап ВСОШ, МХК</p>
+        </div>
+
+        <div class="article prep-elem">
+            <img class="prep-img"
+                src="https://abrakadabra.fun/uploads/posts/2021-12/1640528661_1-abrakadabra-fun-p-serii-chelovek-na-avu-1.png">
+            <h2 class="prep-name">Бахметьева Анастасия, 11 класс</h2>
+            <p class="prep-info">Победитель</p>
+            <p class="prep-info">Региональный этап ВСОШ, Обществощнание</p>
+        </div>
+
+        <div class="article prep-elem">
+            <img class="prep-img"
+                src="https://abrakadabra.fun/uploads/posts/2021-12/1640528661_1-abrakadabra-fun-p-serii-chelovek-na-avu-1.png">
+            <h2 class="prep-name">Смоляр Варвара, 11 класс</h2>
+            <p class="prep-info">Победитель</p>
+            <p class="prep-info">Региональный этап ВСОШ, Немецкий язык</p>
+        </div>
+
+        <div class="article prep-elem">
+            <img class="prep-img"
+                src="https://abrakadabra.fun/uploads/posts/2021-12/1640528661_1-abrakadabra-fun-p-serii-chelovek-na-avu-1.png">
+            <h2 class="prep-name">Пасечнюк Тимофей, 11 класс</h2>
+            <p class="prep-info">Призёр</p>
+            <p class="prep-info">Региональный этап ВСОШ, Литература</p>
+        </div>ъ
+
+        <div class="article prep-elem">
+            <img class="prep-img"
+                src="https://abrakadabra.fun/uploads/posts/2021-12/1640528661_1-abrakadabra-fun-p-serii-chelovek-na-avu-1.png">
+            <h2 class="prep-name">Постников Глеб, 7 класс</h2>
+            <p class="prep-info">Призёр</p>
+            <p class="prep-info">ВСОШ АСТРОНОМИЯ ИМ. СТРУВЕ</p>
+        </div>
+
+        <div class="article prep-elem">
+            <img class="prep-img"
+                src="https://abrakadabra.fun/uploads/posts/2021-12/1640528661_1-abrakadabra-fun-p-serii-chelovek-na-avu-1.png">
+            <h2 class="prep-name">Косолапов Олег, 6 класс</h2>
+            <p class="prep-info">Призёр</p>
+            <p class="prep-info">ФИЗИКА ИМ. ДЖ. МАКСВЕЛЛА</p>
+        </div>
+        <div class="article prep-elem">
+            <img class="prep-img"
+                src="https://abrakadabra.fun/uploads/posts/2021-12/1640528661_1-abrakadabra-fun-p-serii-chelovek-na-avu-1.png">
+            <h2 class="prep-name">Косолапов Олег, 6 класс</h2>
+            <p class="prep-info">Победитель</p>
+            <p class="prep-info">Подмосковная олимпиада, Математика</p>
+        </div>
+    </div>
+
+
+
+
+    <section class="sec-menu" id="sec-menu">
+        <h1>Card</h1>
+        <h3 class="sec-menu-header">Add new</h3>
+        <div class="sec-menu-buttons">
+
+            <div class="sec-menu-buttons-btn">
+                <h3 class="sec-menu-buttons-btn-header">Текст</h3>
+                <button class="style-button" id="curStyle">Cursive</button>
+                <button class="style-button" id="boldStyle">Bold</button>
+                <button class="decoration-button" id="underlineStyle">Underline</button>
+                <input type="color" class="text-color-input" id="clStyle">
+            </div>
+
+            <p class="input" placeholder="ФИО ученика" contenteditable="true" id="inpname"></p>
+            <p class="input" placeholder="Статус" contenteditable="true" id="inpstat"></p>
+            <p class="input" placeholder="Предмет" contenteditable="true" id="inpinfo"></p>
+
+            <div class="sec-menu-buttons-types">
+                <h3 class="sec-menu-buttons-btn-header">Загрузить фото ученика</h3>
+                <input type="file" id="inpImg">
+                <button class="style-button" id="addImg">Открыть</button>
+            </div>
+        </div>
+    </section>
+
+    </div>
+    <div class="uk-section uk-section-secondary uk-light footer ftr">
+        <div class="uk-container">
+            <p style="font-size: 25px;">&copy; Потемин Константин Иванович, +7-(968)-895-92-63</p>
+        </div>
+    </div>
+
+    <script src="prep.js"></script>
+    <script src="../login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.3/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
